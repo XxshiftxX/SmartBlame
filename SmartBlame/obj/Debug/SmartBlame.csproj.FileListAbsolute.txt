@@ -1,0 +1,15 @@
+D:\Programing\CSharp\SmartBlame\SmartBlame\bin\Debug\SmartBlame.exe.config
+D:\Programing\CSharp\SmartBlame\SmartBlame\bin\Debug\SmartBlame.exe
+D:\Programing\CSharp\SmartBlame\SmartBlame\bin\Debug\SmartBlame.pdb
+D:\Programing\CSharp\SmartBlame\SmartBlame\obj\Debug\SmartBlame.csprojResolveAssemblyReference.cache
+D:\Programing\CSharp\SmartBlame\SmartBlame\obj\Debug\MainWindow.g.cs
+D:\Programing\CSharp\SmartBlame\SmartBlame\obj\Debug\App.g.cs
+D:\Programing\CSharp\SmartBlame\SmartBlame\obj\Debug\SmartBlame_MarkupCompile.cache
+D:\Programing\CSharp\SmartBlame\SmartBlame\obj\Debug\SmartBlame_MarkupCompile.lref
+D:\Programing\CSharp\SmartBlame\SmartBlame\obj\Debug\MainWindow.baml
+D:\Programing\CSharp\SmartBlame\SmartBlame\obj\Debug\SmartBlame.g.resources
+D:\Programing\CSharp\SmartBlame\SmartBlame\obj\Debug\SmartBlame.Properties.Resources.resources
+D:\Programing\CSharp\SmartBlame\SmartBlame\obj\Debug\SmartBlame.csproj.GenerateResource.Cache
+D:\Programing\CSharp\SmartBlame\SmartBlame\obj\Debug\SmartBlame.csproj.CoreCompileInputs.cache
+D:\Programing\CSharp\SmartBlame\SmartBlame\obj\Debug\SmartBlame.exe
+D:\Programing\CSharp\SmartBlame\SmartBlame\obj\Debug\SmartBlame.pdb
