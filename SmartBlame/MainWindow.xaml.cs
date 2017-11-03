@@ -31,7 +31,7 @@ namespace SmartBlame
 
         private void ExcuteButton_Click(object sender = null, RoutedEventArgs e = null)
         {
-            encryptor.Encrypt("안");
+            OutputTextBox.Text = encryptor.Encrypt(InputTextBox.Text);
         }
     }
 }
