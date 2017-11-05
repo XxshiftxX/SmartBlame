@@ -16,6 +16,7 @@
             <RowDefinition Height="1*" />
             <RowDefinition Height="30" />
             <RowDefinition Height="1*" />
+            <RowDefinition Height="30" />
         </Grid.RowDefinitions>
 
         <TextBox x:Name="InputTextBox" Grid.Column="1" Margin="10"/>
@@ -25,5 +26,10 @@
         </StackPanel>
 
         <TextBox x:Name="OutputTextBox" Grid.Row="2" Grid.Column="1" Margin="10" IsReadOnly="True">갓-코더 지망생 시프트의 완벽한 프로그램</TextBox>
+
+        <StackPanel Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button x:Name="YaminButton" Margin="5, 3" Click="YaminButton_Click">야민정음</Button>
+            <Button x:Name="RemoveIeungButton" Margin="5, 3" Click="RemoveIeungButton_Click">ㅇ 소거</Button>
+        </StackPanel>
     </Grid>
 </Window>

@@ -33,5 +33,23 @@ namespace SmartBlame
         {
             OutputTextBox.Text = encryptor.Encrypt(InputTextBox.Text);
         }
+
+        private void YaminButton_Click(object sender, RoutedEventArgs e)
+        {
+            encryptor.Yamin = !encryptor.Yamin;
+            if (encryptor.Yamin)
+                YaminButton.Background = Brushes.Red;
+            else
+                YaminButton.Background = Brushes.Gray;
+        }
+
+        private void RemoveIeungButton_Click(object sender, RoutedEventArgs e)
+        {
+            encryptor.RemoveIeung = !encryptor.RemoveIeung;
+            if (encryptor.RemoveIeung)
+                RemoveIeungButton.Background = Brushes.Red;
+            else
+                RemoveIeungButton.Background = Brushes.Gray;
+        }
     }
 }

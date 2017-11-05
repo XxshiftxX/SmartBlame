@@ -18,8 +18,8 @@ namespace SmartBlame
         { x, ㄱ, ㄲ, ㄳ, ㄴ, ㄵ, ㄶ, ㄷ, ㄹ, ㄺ, ㄻ, ㄼ, ㄽ, ㄾ, ㄿ, ㅀ, ㅁ, ㅂ, ㅄ, ㅅ, ㅆ, ㅇ, ㅈ, ㅊ, ㅋ, ㅌ, ㅍ, ㅎ}
 
         bool PairConsonant = false;
-        bool RemoveIeung = true;
-        bool Yamin = true;
+        public bool RemoveIeung = true;
+        public bool Yamin = true;
         bool AdvancedChange = false;
 
         char[] __Cho = { 'ㄱ', 'ㄲ', 'ㄴ', 'ㄷ', 'ㄸ', 'ㄹ', 'ㅁ', 'ㅂ', 'ㅃ', 'ㅅ', 'ㅆ', 'ㅇ', 'ㅈ', 'ㅉ',
@@ -76,7 +76,8 @@ namespace SmartBlame
                     if(analizeCho[i+1] == (int)EnumCho.ㅇ && analizeJong[i] != (int)EnumJong.x)
                     {
                         analizeCho[i + 1] = Array.IndexOf(__Cho, __Jong[analizeJong[i]]);
-                        analizeJong[i] = (int)EnumJong.x;
+                        if(analizeJong[i] != (int)EnumJong.ㅇ)
+                            analizeJong[i] = (int)EnumJong.x;
                     }
                 }
             }
