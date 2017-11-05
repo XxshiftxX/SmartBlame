@@ -38,18 +38,18 @@ namespace SmartBlame
         {
             encryptor.Yamin = !encryptor.Yamin;
             if (encryptor.Yamin)
-                YaminButton.Background = Brushes.Red;
+                YaminButton.Background = Brushes.Blue;
             else
-                YaminButton.Background = Brushes.Gray;
+                YaminButton.Background = Brushes.Red;
         }
 
         private void RemoveIeungButton_Click(object sender, RoutedEventArgs e)
         {
             encryptor.RemoveIeung = !encryptor.RemoveIeung;
             if (encryptor.RemoveIeung)
-                RemoveIeungButton.Background = Brushes.Red;
+                RemoveIeungButton.Background = Brushes.Blue;
             else
-                RemoveIeungButton.Background = Brushes.Gray;
+                RemoveIeungButton.Background = Brushes.Red;
         }
     }
 }
