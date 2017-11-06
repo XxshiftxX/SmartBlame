@@ -69,15 +69,44 @@ namespace SmartBlame
 
             Analize(input);
 
+            // ㅇ 소거
             if(RemoveIeung)
             {
                 for(int i = 0; i < analizeHangeul.Length-1; i++)
                 {
                     if(analizeCho[i+1] == (int)EnumCho.ㅇ && analizeJong[i] != (int)EnumJong.x)
                     {
-                        analizeCho[i + 1] = Array.IndexOf(__Cho, __Jong[analizeJong[i]]);
-                        if(analizeJong[i] != (int)EnumJong.ㅇ)
-                            analizeJong[i] = (int)EnumJong.x;
+                        switch(analizeJong[i])
+                        {
+                            case (int)EnumJong.ㄳ:
+                                analizeCho[i + 1] = Array.IndexOf(__Cho, 'ㅅ');
+                                analizeJong[i] = (int)EnumJong.ㄱ;
+                                break;
+                            case (int)EnumJong.ㄵ:
+                                analizeCho[i + 1] = Array.IndexOf(__Cho, 'ㅈ');
+                                analizeJong[i] = (int)EnumJong.ㄴ;
+                                break;
+                            case (int)EnumJong.ㄶ:
+                                analizeJong[i] = (int)EnumJong.ㄴ;
+                                break;
+                            case (int)EnumJong.ㅄ:
+                                analizeCho[i + 1] = Array.IndexOf(__Cho, 'ㅅ');
+                                analizeJong[i] = (int)EnumJong.ㅂ;
+                                break;
+                            case (int)EnumJong.ㄼ:
+                                analizeCho[i + 1] = Array.IndexOf(__Cho, 'ㅂ');
+                                analizeJong[i] = (int)EnumJong.ㄹ;
+                                break;
+                            case (int)EnumJong.ㅎ:
+                                analizeJong[i] = (int)EnumJong.x;
+                                break;
+                            case (int)EnumJong.ㅇ:
+                                break;
+                            default:
+                                analizeCho[i + 1] = Array.IndexOf(__Cho, __Jong[analizeJong[i]]);
+                                analizeJong[i] = (int)EnumJong.x;
+                                break;
+                        }
                     }
                 }
             }

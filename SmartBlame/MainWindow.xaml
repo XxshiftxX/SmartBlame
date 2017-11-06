@@ -19,13 +19,13 @@
             <RowDefinition Height="30" />
         </Grid.RowDefinitions>
 
-        <TextBox x:Name="InputTextBox" TextWrapping="Wrap" AcceptsReturn="True" Grid.Column="1" Margin="10"/>
+        <TextBox x:Name="InputTextBox" TextWrapping="Wrap" AcceptsReturn="True" Grid.Column="1" Margin="10" FontFamily="Noto Sans CJK KR Medium"/>
 
         <StackPanel Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
             <Button x:Name="ExcuteButton" Height="25" Margin="5, 0" Click="ExcuteButton_Click">암호화</Button>
         </StackPanel>
 
-        <TextBox x:Name="OutputTextBox" TextWrapping="Wrap" Grid.Row="2" Grid.Column="1" Margin="10" IsReadOnly="True">갓-코더 지망생 시프트의 완벽한 프로그램</TextBox>
+        <TextBox x:Name="OutputTextBox" TextWrapping="Wrap" Grid.Row="2" Grid.Column="1" Margin="10" IsReadOnly="True" FontFamily="Noto Sans CJK KR Medium">갓-코더 지망생 시프트의 완벽한 프로그램</TextBox>
 
         <StackPanel Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Right">
             <Button x:Name="YaminButton" Margin="5, 3" Click="YaminButton_Click" Background="Blue">야민정음</Button>
